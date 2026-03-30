@@ -1,41 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Metron — Privacy Policy</title>
     <style>
-        body { font-family: sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-        h1 { font-size: 1.4em; }
-        h3 { margin-top: 1.5em; }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.7;
+            padding: 40px 20px 80px;
+        }
+
+        .card {
+            background: #ffffff;
+            max-width: 680px;
+            margin: 0 auto;
+            border-radius: 16px;
+            padding: 40px 44px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 32px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #e5e5ea;
+        }
+
+        .app-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, #6c47ff, #a78bfa);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: white;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .header-text h1 {
+            font-size: 1.3em;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .header-text p {
+            font-size: 0.85em;
+            color: #6e6e73;
+            margin-top: 2px;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-size: 0.95em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #6c47ff;
+            margin-bottom: 6px;
+        }
+
+        p {
+            font-size: 0.95em;
+            color: #3a3a3c;
+        }
+
+        .contact-link {
+            color: #6c47ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            background: #f2eeff;
+            border-left: 3px solid #6c47ff;
+            border-radius: 0 8px 8px 0;
+            padding: 12px 16px;
+            font-size: 0.88em;
+            color: #3a3a3c;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 520px) {
+            .card { padding: 28px 22px; }
+        }
     </style>
 </head>
 <body>
+    <div class="card">
 
-        <p><em>Last updated: 2025</em></p>
+        <div class="header">
+            <div class="app-icon">M</div>
+            <div class="header-text">
+                <h1>Metron Privacy Policy</h1>
+                <p>Last updated: March 2026</p>
+            </div>
+        </div>
 
-        <h3>No Data Collection</h3>
-        <p>Metron does not collect, transmit, or share any personal data. The app has no user
-        accounts, no registration, and no analytics or advertising.</p>
+        <div class="section">
+            <h3>No Personal Data Collected</h3>
+            <p>Metron does not collect, transmit, or share any personal data. The app has no user accounts, no registration, and no analytics or advertising.</p>
+        </div>
 
-        <h3>Local Storage Only</h3>
-        <p>Your preferences (theme, angle mode, display precision, number format, and startup
-        page) are stored locally on your device using browser localStorage. This data never
-        leaves your device.</p>
+        <div class="section">
+            <h3>Local Storage Only</h3>
+            <p>Your preferences (theme, angle mode, display precision, number format, and startup page) and calculation history are stored locally on your device. This data never leaves your device.</p>
+        </div>
 
-        <h3>No Internet Access Required</h3>
-        <p>Metron functions entirely offline. No network requests are made during normal use.</p>
+        <div class="section">
+            <h3>AI Assistant (Pro+AI tier)</h3>
+            <p>If you subscribe to the Pro+AI plan, the AI Maths Assistant sends your messages to Google's Gemini API to generate responses. Only the text of your conversation is transmitted — no personal information is included. This data is subject to Google's privacy policy.</p>
+            <div class="note">The AI Assistant is only active when you use it. Free and Pro users make no external network requests.</div>
+        </div>
 
-        <h3>No Third-Party Services</h3>
-        <p>Metron does not integrate any third-party analytics, advertising, or crash reporting
-        services.</p>
+        <div class="section">
+            <h3>In-App Purchases</h3>
+            <p>Pro and Pro+AI subscriptions are processed through Google Play. Payment information is handled entirely by Google and is never seen or stored by Metron.</p>
+        </div>
 
-        <h3>Children's Privacy</h3>
-        <p>Because we do not collect any data, Metron is safe to use by people of all ages.</p>
+        <div class="section">
+            <h3>No Third-Party Analytics or Advertising</h3>
+            <p>Metron does not integrate any analytics, advertising, or crash reporting services.</p>
+        </div>
 
-        <h3>Contact</h3>
-        <p>If you have questions about this Privacy Policy, please contact:
-        <strong>metronmaths@gmail.com</strong></p>
-        
+        <div class="section">
+            <h3>Children's Privacy</h3>
+            <p>Because we do not collect any personal data, Metron is safe to use by people of all ages.</p>
+        </div>
+
+        <div class="section">
+            <h3>Contact</h3>
+            <p>If you have questions about this Privacy Policy, please contact: <a class="contact-link" href="mailto:metronmaths@gmail.com">metronmaths@gmail.com</a></p>
+        </div>
+
+    </div>
 </body>
 </html>
