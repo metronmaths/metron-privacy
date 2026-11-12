@@ -1,152 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Metron — Privacy Policy</title>
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f5f5f7;
-            color: #1d1d1f;
-            line-height: 1.7;
-            padding: 40px 20px 80px;
-        }
-
-        .card {
-            background: #ffffff;
-            max-width: 680px;
-            margin: 0 auto;
-            border-radius: 16px;
-            padding: 40px 44px;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-        }
-
-        .header {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 32px;
-            padding-bottom: 28px;
-            border-bottom: 1px solid #e5e5ea;
-        }
-
-        .app-icon {
-            width: 52px;
-            height: 52px;
-            border-radius: 12px;
-            flex-shrink: 0;
-            object-fit: cover;
-        }
-
-        .header-text h1 {
-            font-size: 1.3em;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-        }
-
-        .header-text p {
-            font-size: 0.85em;
-            color: #6e6e73;
-            margin-top: 2px;
-        }
-
-        .section {
-            margin-bottom: 28px;
-        }
-
-        .section:last-child {
-            margin-bottom: 0;
-        }
-
-        h3 {
-            font-size: 0.95em;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            color: #6c47ff;
-            margin-bottom: 6px;
-        }
-
-        p {
-            font-size: 0.95em;
-            color: #3a3a3c;
-        }
-
-        .contact-link {
-            color: #6c47ff;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contact-link:hover {
-            text-decoration: underline;
-        }
-
-        .note {
-            background: #f2eeff;
-            border-left: 3px solid #6c47ff;
-            border-radius: 0 8px 8px 0;
-            padding: 12px 16px;
-            font-size: 0.88em;
-            color: #3a3a3c;
-            margin-top: 8px;
-        }
-
-        @media (max-width: 520px) {
-            .card { padding: 28px 22px; }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metron — Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --text: #1d1d1f; --muted: #5f6368; --rule: #e3e3e3; --accent: #1a73e8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --text: #e8e8e8; --muted: #a8a8a8; --rule: #333333; --accent: #8ab4f8; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  .icon { width: 64px; height: 64px; border-radius: 14px; display: block; margin-bottom: 16px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 6px; }
+  p { margin: 0 0 12px; }
+  .updated { color: var(--muted); margin-bottom: 24px; }
+  a { color: var(--accent); }
+  footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+</style>
 </head>
 <body>
-    <div class="card">
+<main>
+  <img class="icon" src="app-icon.png" alt="Metron app icon">
+  <h1>Metron Privacy Policy</h1>
+  <p class="updated">Last updated: August 2026</p>
 
-        <div class="header">
-            <img class="app-icon" src="app-icon.png" alt="Metron">
-            <div class="header-text">
-                <h1>Metron Privacy Policy</h1>
-                <p>Last updated: March 2026</p>
-            </div>
-        </div>
+  <h2>No Personal Data Collected</h2>
+  <p>Metron does not collect, transmit, or share any personal data. The app has no user accounts, no
+  registration, and no analytics or advertising.</p>
 
-        <div class="section">
-            <h3>No Personal Data Collected</h3>
-            <p>Metron does not collect, transmit, or share any personal data. The app has no user accounts, no registration, and no analytics or advertising.</p>
-        </div>
+  <h2>Local Storage Only</h2>
+  <p>Your preferences (theme, angle mode, display precision, number format, and startup page) and
+  calculation history are stored locally on your device. This data never leaves your device.</p>
 
-        <div class="section">
-            <h3>Local Storage Only</h3>
-            <p>Your preferences (theme, angle mode, display precision, number format, and startup page) and calculation history are stored locally on your device. This data never leaves your device.</p>
-        </div>
+  <h2>AI Assistant (Pro+AI tier)</h2>
+  <p>If you subscribe to the Pro+AI plan, your messages are sent to a Metron server (hosted on Google
+  Cloud in the United Kingdom), which checks your subscription is active and then forwards the
+  conversation to Google's Gemini API to generate a reply. Only the text of your conversation is
+  transmitted. No personal information is included.</p>
+  <p>Your conversations are <strong>not stored on the server</strong>. They are held only on your
+  device, and are passed through in order to answer you. The server keeps just two things: a one-way
+  cryptographic hash of your Google Play subscription token, which identifies your subscription
+  without revealing it, and a running total of how much of your allowance you have used. Neither can
+  be traced back to you personally.</p>
+  <p>Free and Pro users make no external network requests unless they choose to supply their own API
+  key, in which case their messages go directly to Google and never reach a Metron server.</p>
 
-        <div class="section">
-            <h3>AI Assistant (Pro+AI tier)</h3>
-            <p>If you subscribe to the Pro+AI plan, the AI Maths Assistant sends your messages to Google's Gemini API to generate responses. Only the text of your conversation is transmitted — no personal information is included. This data is subject to Google's privacy policy.</p>
-            <div class="note">The AI Assistant is only active when you use it. Free and Pro users make no external network requests.</div>
-        </div>
+  <h2>In-App Purchases</h2>
+  <p>Pro and Pro+AI subscriptions are processed through Google Play. Payment information is handled
+  entirely by Google and is never seen or stored by Metron.</p>
 
-        <div class="section">
-            <h3>In-App Purchases</h3>
-            <p>Pro and Pro+AI subscriptions are processed through Google Play. Payment information is handled entirely by Google and is never seen or stored by Metron.</p>
-        </div>
+  <h2>No Third-Party Analytics or Advertising</h2>
+  <p>Metron does not integrate any analytics, advertising, or crash reporting services.</p>
 
-        <div class="section">
-            <h3>No Third-Party Analytics or Advertising</h3>
-            <p>Metron does not integrate any analytics, advertising, or crash reporting services.</p>
-        </div>
+  <h2>Children's Privacy</h2>
+  <p>Because we do not collect any personal data, Metron is safe to use by people of all ages.</p>
 
-        <div class="section">
-            <h3>Children's Privacy</h3>
-            <p>Because we do not collect any personal data, Metron is safe to use by people of all ages.</p>
-        </div>
+  <h2>Contact</h2>
+  <p>If you have questions about this Privacy Policy, please contact:
+  <a href="mailto:metronmaths@gmail.com">metronmaths@gmail.com</a></p>
 
-        <div class="section">
-            <h3>Contact</h3>
-            <p>If you have questions about this Privacy Policy, please contact: <a class="contact-link" href="mailto:metronmaths@gmail.com">metronmaths@gmail.com</a></p>
-        </div>
-
-    </div>
+  <footer>Metron · Privacy Policy · <a href="terms.html">Terms of Use</a></footer>
+</main>
 </body>
 </html>
